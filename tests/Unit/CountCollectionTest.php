@@ -17,7 +17,7 @@ class CountCollectionTest extends TestCase
     {
         $users = User::All();
         //$recordCount = $users->count();
-        $this->assertInternalType('int',$users->count());
-        $this->assertEquals(50,$users->count());
+        //$this->assertInternalType('int',$usemainrs->count());
+        $this->assertEquals(45,$users->count());
     }
 }
