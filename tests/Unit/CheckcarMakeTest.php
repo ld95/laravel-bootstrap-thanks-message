@@ -18,6 +18,6 @@ class CheckcarMakeTest extends TestCase
         $car = Car::inRandomOrder()->first();
         $make = $car->make;
 
-        $this->assertContains($make,['ford','honda','toyota']);
+        $this->assertContains($make,['Ford','Honda','Toyota']);
     }
 }
