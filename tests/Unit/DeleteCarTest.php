@@ -15,7 +15,7 @@ class DeleteCarTest extends TestCase
      */
     public function testDeleteCar()
     {
-        $car = Car::find(2);
+        $car = Car::inRandomOrder()->first();
 
         $this->assertTrue($car->delete());
     }
