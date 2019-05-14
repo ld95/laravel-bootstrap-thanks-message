@@ -17,8 +17,8 @@ class CheckCarYearTest extends TestCase
     public function testCheckCarYear()
     {
         $car = Car::inRandomOrder()->first();
-        //$year = $car->year;
+        $year = (int) $car->year;
 
-        $this->assertInternalType('int', $car->year);
+        $this->assertInternalType('integer', $year);
     }
 }
