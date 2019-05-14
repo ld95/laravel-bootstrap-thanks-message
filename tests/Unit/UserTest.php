@@ -17,7 +17,7 @@ class UserTest extends TestCase
     public function testInsert(){
         $user = new User();
         $user->name = 'Song';
-        $user->email = 'song@example.com';
+        $user->email = 'yansong@example.com';
         $user->email_verified_at = '2019-05-13 15:47:59';
         $user->updated_at = '2019-05-13 15:47:59';
         $user->created_at = '2019-05-13 15:47:59';
@@ -25,7 +25,6 @@ class UserTest extends TestCase
         $user->remember_token ='7sGmmdyqJy';
 
         $this->assertTrue($user->save());
-        
 
     }
 
