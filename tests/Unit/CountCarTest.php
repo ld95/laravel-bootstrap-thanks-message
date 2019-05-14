@@ -19,6 +19,5 @@ class CountCarTest extends TestCase
         //$recordCount = $cars->count();
         $this->assertInternalType('int',$cars->count());
         $this->assertEquals(50,$cars->count());
-
     }
 }
